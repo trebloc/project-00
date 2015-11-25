@@ -1,0 +1,35 @@
+#board {
+  margin-top: 10px;
+}
+
+.col-xs-12 {
+
+	height: 100px;
+	border: 1px solid black;
+}
+
+.box {
+  border: 1px solid black;
+  height: 100px;
+  padding: 38px;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.btn {
+	margin-top:20px;
+}
+
+h1 {
+	font-family: monospace;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.player {
+
+	font-size: 50px;
+	float: left;
+
+}
+

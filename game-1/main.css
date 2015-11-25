@@ -29,7 +29,8 @@ h1 {
 .player {
 
 	font-size: 50px;
-	float: left;
+	position: absolute;
+	left: 2%;
 
 }
 

@@ -32,9 +32,7 @@ $("#reset").click(function clickHandle() {
   $bothPlayers.forEach(function resetHandler(element) {
     element.css("left", "2%");
   });
-}); 
-
- 
+});  
 
 //$('.player').click(function(elem) {
 // $('.player').text("Hi");

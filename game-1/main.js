@@ -1,4 +1,3 @@
-
 $(function() {
 
 // wait for DOM to load before running JS
@@ -28,10 +27,9 @@ $(window).on("keypress", function handler(event) {
 
 var $bothPlayers = $(".player");
 // Resets the Game.
-$("#reset").click(function clickHandle() {
-  $bothPlayers.forEach(function resetHandler(element) {
-    element.css("left", "2%");
-  });
+    $("button").click(function handleClick(event){
+    location.reload();
+
 }); 
 
  
@@ -42,30 +40,22 @@ $("#reset").click(function clickHandle() {
 
               /*
               // elements for gameplay
-
               var $board = $('#board'),
                   $boxes1 = $('.box'),
                   // $boxes2 = $('.box2'),    
                   $reset = $('#reset');
-
               //players
               var player1 = "x";
               // var player2 = "o";
-
               // counter for reset
               var count = 0;
-
               var $player = $(".box");
               var leftPosition = $player.offset().left;
-
               $(".boxes1").keypress(function handler() {
                 $(".box" + player1).text("");
                 player1 ++
-
                 $(".box" + player1).text("O");
               });
-
-
               // Resets the Game.
               $reset.click(function clickHandle() {
                   count = 0;

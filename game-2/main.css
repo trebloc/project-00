@@ -10,6 +10,14 @@
   font-weight: bold;
 }
 
+.box2 {
+  border: 1px solid black;
+  height: 100px;
+  padding: 10px;
+  font-size: 55px;
+  font-weight: bold;
+}
+
 .btn {
 	margin-top:20px;
 }

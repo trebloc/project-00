@@ -13,9 +13,9 @@ body {
 }
 
 .box {
-  border: none;
+  border: 1px solid black;
   height: 100px;
-  width: 100  px;
+  padding: 38px;
 }
 
 .box2 {
@@ -28,6 +28,7 @@ body {
 
 .btn {
 	margin-top:20px;
+  font-family: monospace;
 }
 
 h1 {

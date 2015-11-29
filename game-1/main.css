@@ -14,6 +14,7 @@
   padding: 38px;
   font-size: 55px;
   font-weight: bold;
+  width: 700px;
 }
 
 .btn {
@@ -27,11 +28,12 @@ h1 {
 }
 
 .player {
-
-	font-size: 70px;
+	font-size: 75px;
 	position: absolute;
-	
+}
 
+.winner {
+	font-size: 55px;
 }
 
 

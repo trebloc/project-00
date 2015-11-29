@@ -2,13 +2,23 @@
   margin-top: 10px;
 }
 
-.col-xs-12 {
+body {
+  background: url("http://images.alphacoders.com/121/121813.jpg");
+  background-size: 1366px 768px;
+  background-repeat: no-repeat;
+}
 
-	height: 100px;
-	border: 1px solid black;
+#top {
+  margin-top: 75px;
 }
 
 .box {
+  border: none;
+  height: 100px;
+  width: 100  px;
+}
+
+.box2 {
   border: 1px solid black;
   height: 100px;
   padding: 38px;
@@ -24,6 +34,7 @@ h1 {
 	font-family: monospace;
 	font-size: 50px;
 	font-weight: bold;
+  color: white;
 }
 
 .player {

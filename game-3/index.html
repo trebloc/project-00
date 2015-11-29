@@ -11,27 +11,54 @@
   <!-- custom styles -->
   <link rel="stylesheet" type="text/css" href="main.css">
 
-  <title>Dot Racing!</title>
+  <title>Space Race</title>
 </head>
 <body>
   <div class="container text-center">
-    <div class="board">
+    <div class="row">
       <div class="col-md-12">
-        <h1>Dot Racing!</h1>
-        <hr> 
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="player">&#x25cf;</div>             
-        </div>                    
+        <h1>Space Race</h1>
+        <hr>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="player">&#x25cf;</div>          
-        </div>                     
-      </div>      
-    </div>        
+    </div>  
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1" id="board">
+        <div class="row">
+          <div class="col-xs-1 box 0"></div>
+          <div class="col-xs-1 box 1"></div>
+          <div class="col-xs-1 box 2"></div>
+          <div class="col-xs-1 box 3"></div>
+          <div class="col-xs-1 box 4"></div>
+          <div class="col-xs-1 box 5"></div>
+          <div class="col-xs-1 box 6"></div>
+          <div class="col-xs-1 box 7"></div> 
+          <div class="col-xs-1 box 8"></div>            
+        </div> 
+        <div class="row">
+          <div class="col-xs-1 box2"></div>
+          <div class="col-xs-1 box2"></div>
+          <div class="col-xs-1 box2"></div>
+          <div class="col-xs-1 box2"></div>
+          <div class="col-xs-1 box2"></div>
+          <div class="col-xs-1 box2"></div>
+          <div class="col-xs-1 box2"></div>
+          <div class="col-xs-1 box2"></div>
+          <div class="col-xs-1 box2"></div>
+          <div class="col-xs-1 box2"></div>
+          <div class="col-xs-1 box2"></div>
+          <div class="col-xs-1 box2"></div>          
+        </div>
+        <div class="row">         
+          <div class="col-md-12 winner"></div>
+        </div>
+        <div class="row">
+        </div>                           
+      </div>
+    </div>
+</div>
+<div class="container text-center">
   <div class="btn-group">  
-   <button type="button" class="btn btn-success btn-lg" id="reset">Reset Game</button>
+     <button type="button" class="btn btn-success btn-lg" id="reset">Reset Game</button>
   </div>   
 </div>
   

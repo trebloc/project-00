@@ -1,72 +1,52 @@
 
 $(function() {
-
 // wait for DOM to load before running JS
 console.log("Sanity Check: JS is working!");
+$("iframe").hide();
+    
+//Defining Player 1 and 2 Position   
+var player1 = 0;
+var player2 = 0;
 
-var p1Distance = 2;
-var p2Distance = 2;
-var $player1 = $(".player").eq(0);
-var $player2 = $(".player").eq(1);
+var enterprise = new Image (100, 33);
+enterprise.src = "images/enterprise.gif";
+
+$("."+ player1).append(enterprise);
 
 
-$(window).on("keypress", function handler(event) {
-  if (event.which === 97) {
-    //Trying to declare a winner when a player hits certain % at the end. 
-    if ($player1.css("left")) {
-      p1Distance += 2;
-      $player1.css("left", p1Distance + "%");
-    }
-  } else if (event.which === 108) {
-    if ($player2.css("left")) {
-      p2Distance += 2;
-      $player2.css("left", p2Distance + "%");
-    }
+    
+//Keypress set for "A" (Player 1) and "L" (Player 2)    
+    $(window).on("keypress", function handler(event) {
+      
+//Player 1 and 2      
+       if (event.which === 97) {
+        if (player1 < 11) {
+          
+            player1 ++;
+            $("."+ player1).append(enterprise);
+        }             
+      } else if (event.which === 108) {
+        if (player2 < 11) {
+          $(".box2").eq(player2).text("");
+          player2 ++;
+          $(".box2").eq(player2).text("O");
+        }
+      }    
+//Win Outcome                  
+      if (player1 >= 11) {
+  $(".winner").text("Player One Wins!")
+  $(window).off("keypress");
+}
+  else if (player2 >=11) {
+    $(".winner").text("Player Two Wins!")
+    $(window).off("keypress");    
   }
+    });
+
+
+//Reset
+    $("button").click(function handleClick(event){
+    location.reload();
 
 });
-
-var $bothPlayers = $(".player");
-// Resets the Game.
-$("#reset").click(function clickHandle() {
-  $bothPlayers.forEach(function resetHandler(element) {
-    element.css("left", "2%");
-  });
-});  
-
-//$('.player').click(function(elem) {
-// $('.player').text("Hi");
 });
-
-              /*
-              // elements for gameplay
-
-              var $board = $('#board'),
-                  $boxes1 = $('.box'),
-                  // $boxes2 = $('.box2'),    
-                  $reset = $('#reset');
-
-              //players
-              var player1 = "x";
-              // var player2 = "o";
-
-              // counter for reset
-              var count = 0;
-
-              var $player = $(".box");
-              var leftPosition = $player.offset().left;
-
-              $(".boxes1").keypress(function handler() {
-                $(".box" + player1).text("");
-                player1 ++
-
-                $(".box" + player1).text("O");
-              });
-
-
-              // Resets the Game.
-              $reset.click(function clickHandle() {
-                  count = 0;
-                  $boxes.empty();
-              });
-              */

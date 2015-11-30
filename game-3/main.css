@@ -3,9 +3,11 @@
 }
 
 body {
-  background: url("http://images.alphacoders.com/121/121813.jpg");
+  background: url("images/space.jpg");
   background-size: 1366px 768px;
   background-repeat: no-repeat;
+  font-family: monospace;
+  color: white;
 }
 
 #top {
@@ -13,17 +15,15 @@ body {
 }
 
 .box {
-  border: 1px solid black;
+  border: none;
   height: 100px;
   padding: 38px;
 }
 
 .box2 {
-  border: 1px solid black;
+  border: none;
   height: 100px;
   padding: 38px;
-  font-size: 55px;
-  font-weight: bold;
 }
 
 .btn {
@@ -33,17 +33,21 @@ body {
 
 h1 {
 	font-family: monospace;
-	font-size: 50px;
+	font-size: 75px;
 	font-weight: bold;
   color: white;
 }
 
 .player {
-
 	font-size: 70px;
 	position: absolute;
-	
-
 }
+
+.winner {
+  font-size: 55px;
+  color: white;
+  font-family: monospace;
+}
+
 
 

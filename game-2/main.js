@@ -11,7 +11,7 @@ var player2 = 0;
 //Keypress set for "A" (Player 1) and "L" (Player 2)    
     $(window).on("keypress", function handler(event) {
       
-//Player 1 and 2 Movement      
+//Player 1 and 2      
        if (event.which === 97) {
         if (player1 < 11) {
           $(".box").eq(player1).text("");

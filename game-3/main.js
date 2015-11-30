@@ -10,11 +10,11 @@ var player2 = 11;
 
 var enterprise = new Image (100, 33);
 enterprise.src = "images/enterprise.gif";
-var enterprise2 = new Image (100, 33);
-enterprise2.src = "images/enterprise.jpg";
+var falcon = new Image (100, 49);
+falcon.src = "images/falcon.png";
 
 $("."+ player1).append(enterprise);
-$("."+ player2).append(enterprise2);
+$("."+ player2).append(falcon);
 
 
     
@@ -30,7 +30,7 @@ $("."+ player2).append(enterprise2);
       } else if (event.which === 108) {
         if (player2 < 21) {          
             player2 ++;
-            $("."+ player2).append(enterprise2);
+            $("."+ player2).append(falcon);
         }   
       }    
 //Win Outcome                  

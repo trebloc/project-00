@@ -19,7 +19,7 @@ $(window).on("keypress", function handler(event) {
     if ($player1.css("left")) {
       p1Distance += 2;
       $player1.css("left", p1Distance + "%");
-      if ( parseInt($player1.css("left"), 10) >= (0.85 * gameBoard)) {
+      if ( parseInt($player1.css("left"), 10) >= (0.9 * gameBoard)) {
         $(".winner").append("<h1>Player 1 wins</h1>");
         $(window).off("keypress");
       }
@@ -28,7 +28,7 @@ $(window).on("keypress", function handler(event) {
     if ($player2.css("left")) {
       p2Distance += 2;
       $player2.css("left", p2Distance + "%");
-      if ( parseInt($player2.css("left"), 10) >= (0.85 * gameBoard)) {
+      if ( parseInt($player2.css("left"), 10) >= (0.9 * gameBoard)) {
         $(".winner").append("<h1>Player 2 wins</h1>");
         $(window).off("keypress");
     }
